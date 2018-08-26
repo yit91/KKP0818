@@ -6,8 +6,8 @@
   </head>
   <style type="text/css">
     center{
-      background-color: #33b5e5;
-      padding-top: 20px;
+      /* background-color: #33b5e5; */
+      /* padding-top: 20px; */
     }
     #judul{
       height:40px;

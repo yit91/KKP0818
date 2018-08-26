@@ -12,7 +12,7 @@
         <title>Ubah Data Karyawan</title>
       </head>
       <style type="text/css">
-        center{background-color: #33b5e5;}
+        /* center{background-color: #33b5e5;} */
         /* th,td{
           border: 1px solid red;
         } */

@@ -1,4 +1,4 @@
-body {margin:0;font-family:Arial;font-size: 28px;}
+body {margin:0;font-family:sans-serif;font-size: 28px;}
 .header {
   background-color: #df0000;
   padding: 15px;
@@ -129,24 +129,28 @@ body {margin:0;font-family:Arial;font-size: 28px;}
 }
 @media screen and (max-width: 768px){
   .contentL{
-    max-width: 100%;
+    clear: both;
+    display: table;
     float: left;
+    /* width: 100%; */
   }
   .contentR{
-    max-width: 100%;
+    clear: both;
+    display: table;
     float: left;
+    /* width: 100%; */
   }
 }
 .contentL {
   padding: 1%;
   border: 1px solid blue;
-  height: 400px;
-  max-width: 20%;
+  height: auto;
+  max-width: 25%;
   float: left;
 }
 .contentR {
   padding: 1%;
-  float: right;
+  float: left;
   border: 1px solid blue;
   min-height: 400px;
   width: 75%;

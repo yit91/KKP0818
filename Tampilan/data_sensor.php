@@ -33,7 +33,7 @@
         height:405px;
       }
       center{
-        background-color: #33b5e5;
+        /* background-color: #33b5e5; */
         /* border: 1px solid blue; */
       }
     </style>

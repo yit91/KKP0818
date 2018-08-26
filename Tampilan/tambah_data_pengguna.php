@@ -8,8 +8,8 @@
   </head>
   <style type="text/css">
     center{
-      background-color: #33b5e5;
-      padding-top: 20px;
+      /* background-color: #33b5e5; */
+      /* padding-top: 20px; */
     }
     input[type=submit], input[type=reset]{
       padding: 12px 20px;
