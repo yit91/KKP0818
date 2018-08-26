@@ -22,20 +22,20 @@
 
     <!-- Navigasi -->
     <div class="topnav" id="myTopnav" >
-      <a href="#" class="active">Beranda</a>
-      <a href="#">Data Sensor</a>
+      <a href="home.php" class="active">Beranda</a>
+      <a href="home.php?id=ds">Data Sensor</a>
       <a href="#">Pengaturan</a>
       <div class="dropdown">
         <button class="dropbtn">Data Pengguna
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="#">Tambah Data Pengguna</a>
-          <a href="#">Lihat Data Pengguna</a>
+          <a href="home.php?id=tdp">Tambah Data Pengguna</a>
+          <a href="home.php?id=dp">Lihat Data Pengguna</a>
         </div>
       </div>
-      <a href="#Laporan">Laporan Data</a>
-      <a href="#Logout">Logout</a>
+      <a href="home.php?id=eds">Laporan Data</a>
+      <a href="Kontroler/keluar.php">Logout</a>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunctione()">&#9776;</a>
     </div>
 
@@ -44,11 +44,21 @@
       konten n halaman Kiri
     </div>
     <div class="contentR">
-      konten n halaman Kanan
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <?php
+      if (isset($_GET['id'])) {
+        if ($_GET['id']=="dp") {
+          include("Tampilan/data_pengguna.php");
+        } else if($_GET['id']=="tdp") {
+          include("Tampilan/tambah_data_pengguna.php");
+        } else if($_GET['id']=="upd") {
+          include("Tampilan/ubah_data_pengguna.php");
+        } else if($_GET['id']=="ds") {
+          include("Tampilan/data_sensor.php");
+        } else if($_GET['id']=="eds") {
+          include("Tampilan/ekspor_data_sensor.php");
+        }
+      }
+       ?>
     </div>
 
     <!-- footer -->

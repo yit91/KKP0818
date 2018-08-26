@@ -1,11 +1,11 @@
 <?php
 include("koneksi.php");
+$tgl=date("Y-m-d");
 $suhu=$_GET['suhu'];
 $kelembapan = $_GET['kelembapan'];
 
-$sql  = "insert into dht22 (suhu,kelembapan) values ('$suhu','$kelembapan')";
+$sql  = "insert into dht22 (tanggal,suhu,kelembapan) values ('$tgl','$suhu','$kelembapan')";
 if($koneksi->query($sql)===true){
-//  header("Location: ../home.php?id=karyawan");
 }else{
   echo "gagal";
 }

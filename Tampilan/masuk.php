@@ -6,7 +6,7 @@
   </head>
   <body>
     <center>
-      <form class="" action="../Kontroler/masuk.php" method="post">
+      <form class="" action="Kontroler/masuk.php" method="post">
         <table>
           <tr>
             <td>Pengguna</td>
