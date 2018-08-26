@@ -41,7 +41,7 @@
 
     <!-- konten -->
     <div class="contentL">
-      konten n halaman Kiri
+      <?php include("Tampilan/suhu.html"); ?>
     </div>
     <div class="contentR">
       <?php
